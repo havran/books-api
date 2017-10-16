@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This simple application use PostgreSQL database for simple books table with attributes author, title, isbn.
 
-Things you may want to cover:
+Applicaton provide three API endpoints:
 
-* Ruby version
+#### Create new book
 
-* System dependencies
+Example:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+curl -d '{"author": "Book 1 author", "title": "Book 1 title", "isbn": "BOOK1ISBN"}' -H "Content-Type: application/json" -X POST http://localhost:3000/book-add
+```
