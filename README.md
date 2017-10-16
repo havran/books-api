@@ -6,6 +6,10 @@ Applicaton provide three API endpoints:
 
 #### Create new book
 
+METHOD: `POST`
+URL: `/book-add`
+Expected attributes `author`, `title`, `isbn`.
+
 Example:
 
 ```
